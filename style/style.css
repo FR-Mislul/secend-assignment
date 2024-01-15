@@ -9,7 +9,7 @@
 }
 .btn-primary {
   width: 125px;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
   background-color: #ff5400;
   border: none;
@@ -48,19 +48,19 @@ span {
   font-size: 36px;
   font-weight: 800;
 }
-.nav .nav-bar ul {
+.nav .nav-bar .nav-ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-bar ul li {
+.nav-bar .nav-ul .nav-li {
   list-style: none;
   margin-right: 30px;
   text-align: center;
   font-size: 15px;
   font-weight: 400;
 }
-.nav-bar ul a {
+.nav-bar .nav-ul a {
   text-decoration: none;
   color: #424247;
 }
@@ -102,17 +102,48 @@ span {
     border-radius: 10px;
 }
 .header-banner .qucktion-bar input,
-select,
-button {
+select, button {
   margin-left: 20px;
   margin-top: 20px;
   width: 125px;
-  padding: 10px;
+  padding: 15px;
   color: rgba(19, 19, 24, 0.5);
   border: none;
   border-radius: 7px;
   font-size: 13px;
   font-weight: 400;
+}
+
+/* main part style */
+
+/* 1st section part style */
+main .section1{
+    width: 85%;
+    margin: 80px auto;
+    display: flex;
+    gap: 40px;
+}
+.section1 .section1-continer{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.section1 .section1-continer .section1-title{
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+}
+.section1 .section1-continer .section1-dec, .section1-list{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.section1-list{
+    margin-left: 30px;
+}
+.section1 .section1-img{
+    width: 100%;
 }
 
 
@@ -125,7 +156,7 @@ button {
     .nav-name .nav-web-name{
         font-size: 20px;
     }
-    .nav .nav-bar ul{
+    .nav .nav-bar .nav-ul{
         display: none;
     }
     .header .header-banner{
@@ -149,6 +180,12 @@ padding: 15px;
     .header-banner .qucktion-bar input, 
 select, .header-btn{
     width: 280px;
+}
+.section1{
+    flex-direction: column;
+}
+.section1-img img{
+    width: 100%;
 }
 
 }
