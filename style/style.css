@@ -71,6 +71,7 @@ span {
       rgba(19, 19, 24, 0) 100%
     ),
     url("../Images/Group13.png");
+    background-position: center;
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -95,6 +96,11 @@ span {
   font-weight: 400;
   line-height: 26px;
 }
+.header-banner .qucktion-bar{
+    background: rgba(255, 255, 255, 0.30);
+    padding: 0 20px 20px 5px;
+    border-radius: 10px;
+}
 .header-banner .qucktion-bar input,
 select,
 button {
@@ -110,4 +116,39 @@ button {
 }
 
 
+/* mobile screen responivle */
 
+@media screen and (max-width:600px) {
+    .header{
+        width: 90%;
+    }
+    .nav-name .nav-web-name{
+        font-size: 20px;
+    }
+    .nav .nav-bar ul{
+        display: none;
+    }
+    .header .header-banner{
+        width: 100%;
+height: 483px;
+    }
+    .header-banner .header-title{
+width: 240px;
+        font-size: 25px;
+    }
+    .header-banner .header-dec{
+        width: 304px;
+        font-size: 13px;
+    }
+    .header-banner .qucktion-bar{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+padding: 15px;
+    }
+    .header-banner .qucktion-bar input, 
+select, .header-btn{
+    width: 280px;
+}
+
+}
