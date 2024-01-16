@@ -365,7 +365,7 @@ main .section-last {
   cursor: pointer;
 }
 .section-last .newsletter-img {
-  width: 59%;
+  width: auto; 
 }
 .section-last .newsletter-img img {
   width: 100%;
